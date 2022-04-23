@@ -16,12 +16,20 @@
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 # sino que va hasta el anterior
 
+secuencia = []
 inicio = int(input('Ingrese el primer número de la secuencia\n'))
 fin = int(input('Ingrese el último número de la secuencia\n'))
 sumatoria = 0  # Inicializo el contador en 0
 
 # for ... in range(....)
 
+for numero in range(inicio , fin):
+    secuencia.append(numero)
+    sumatoria +=numero
+    print('La suma parcial es:' , sumatoria)
+print('La secuencia completa es:' , secuencia)
+
 # Imprimir el valor de la sumatoria
+print('La sumatoria total de la secuencia es:' , sumatoria)
 
 print("terminamos!")
